@@ -1,0 +1,159 @@
+.createExpenseForm{
+    width: 500px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 5px;
+    left: 35%;
+    top: 5%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    z-index: 10000;
+}
+.createExpenseFormDiv{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 80px;
+}
+.createExpenseFormDivTextArea{
+    height: 180px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.createExpenseFormDivTextArea label{
+    font-size: 1.5rem;
+}
+.createExpenseFormDivTextArea textarea
+{   border-radius: 5px  ;
+    text-align: center;
+    padding: 5px;
+    width: 300px;
+    height: 150px;
+    resize: none;
+}
+.createExpenseFormDiv label{
+    font-size: 1.5rem;
+}
+.createExpenseFormDiv input,.createExpenseFormDiv select {
+    width: 200px;
+    height: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+.createExpensebuttonsDiv{
+    width: 450px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.createExpensebutton{
+    width: 200px;
+    height: 35px;
+    background-color: #00FA9A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: whitesmoke;
+    font-weight: 700;  
+    border-radius: 5px; 
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+  .createExpensebutton:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0060fa;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    border-radius: 5px; 
+  }
+  .createExpensebutton:hover {
+    color: white;
+  }
+  .createExpensebutton:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  .GoBAckbutton{
+    cursor: pointer;
+    width: 200px;
+    height: 35px;
+    background-color: #0060fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: whitesmoke;
+    font-weight: 700;  
+    border-radius: 5px;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s; 
+}
+  .GoBAckbutton:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #00FA9A;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .GoBAckbutton:hover {
+    color: white;
+  }
+  .GoBAckbutton:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }

@@ -1,0 +1,218 @@
+.groceriesMain{
+    width: 100vw;
+    display: flex;
+height: 100vh;
+overflow-y: hidden;
+}
+.groceriesDisplay{
+    width:83%;
+    display: flex;
+        justify-items: center;
+    flex-direction: column;
+    height: 100vh;
+padding-bottom: 20px;
+
+}
+.oneListHeading{
+  text-align: center;
+  margin-bottom: 20px;
+  padding-right: 8rem;
+}
+.listItemsDisplay{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 72vh;
+padding-bottom: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-wrap: wrap;
+}
+.updateBtn  {
+    margin-top:15px ;
+    margin-bottom:15px;
+    width:160px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #00ca87;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    cursor: pointer;
+}
+.updateBtnNot {
+    margin-top:15px ;
+    margin-bottom:15px;
+    width: 160px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #000aca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    cursor: pointer;
+}
+
+.updateBtn:hover,.updateBtnNot:hover,.notesBtn:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .updateButtons{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 8rem;
+  }
+  .notesBtn{
+    margin-top:15px ;
+    margin-bottom:15px;
+    width:160px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #00ca9e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    cursor: pointer;
+  }
+  .notesDiv{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.281);  
+  }
+  .notesDiv div{
+    width: 400px ;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: absolute;
+    top: 25%;
+    right: 36%;
+    background-color: white;
+    z-index: 2000;
+    word-wrap: break-word;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+  }
+  .notesDiv div button{
+    background-color: #DC281E;
+    color: white  ;
+    width: 80px;
+    height: 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .notesDiv div button:hover{
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+.noNOtes{
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+
+  .updateBtn  {
+    width:100px;
+    font-size: 1rem;
+}
+.updateBtnNot {
+    width: 100px;
+    font-size: 1rem;
+}
+  .notesBtn{
+    width:100px;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+
+  .updateBtn  {
+    width:80px;
+    font-size: 0.75rem;
+}
+.updateBtnNot {
+    width: 80px;
+    font-size: 0.75rem;
+}
+  .notesBtn{
+    width:80px;
+    font-size: 0.75rem;
+  }
+  .oneListHeading{
+    text-align: center;
+    margin-bottom: 20px;
+    padding-right: 4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .updateBtn  {
+    width:60px;
+    font-size: 0.6rem;
+}
+.updateBtnNot {
+    width: 60px;
+    font-size: 0.6rem;
+}
+  .notesBtn{
+    width:60px;
+    font-size: 0.6rem;
+  }
+}

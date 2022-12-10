@@ -1,0 +1,61 @@
+.grocerySmallShoppingList{
+    width: 330px;
+    height: 150px;
+    background-color:#00A693;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.grocerySmallShoppingListNot{
+  width: 330px;
+  height: 150px;
+  background-color:#0006a6;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.grocerySmallShoppingList div,.grocerySmallShoppingListNot div{
+height: 100%;
+width: 50%;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: space-around;
+text-align: center;
+font-weight: 600;
+color: aliceblue;
+font-size: 1rem;
+}
+.hvr-shrink {
+    display: inline-block;
+    vertical-align: middle;
+
+  }
+  .grocerySmallShoppingList:hover,.grocerySmallShoppingListNot:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }

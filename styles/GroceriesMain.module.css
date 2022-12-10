@@ -1,0 +1,17 @@
+.groceriesMain{
+    width: 100vw;
+    display: flex;
+height: 100vh;
+}
+.groceriesDisplay{
+    width:83%;
+}
+.groceriesDisplayDiv{
+    display: flex;
+    min-height: 40vh;
+    max-height: 90vh;
+padding-bottom: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-wrap: wrap;
+}

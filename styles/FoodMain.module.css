@@ -1,0 +1,21 @@
+.foodMain{
+    width: 92vw;
+
+height: 100vh;
+}
+.foodDisplay{
+    width: 100vw;
+    display: flex;
+}
+.foodDisplayDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+    height: 72vh;
+    width:100vw; 
+padding-bottom: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    padding-left: 4rem;
+}
