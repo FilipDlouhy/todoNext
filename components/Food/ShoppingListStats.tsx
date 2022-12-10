@@ -92,8 +92,7 @@ function ShoppingListStats() {
 
           <button onClick={()=>{
 
-            router.push(`/groceries/index/${userId}`)
-            axios.post("/api/UpdateList",selectedShoppingList).then((res)=>{
+            axios.post("/api/UpdateList",selectedShoppingList)
             let arr:any = []
             AllshoppingLists?.map((list)=>{
               if(list.id=== selectedShoppingList?.id)
@@ -111,7 +110,6 @@ function ShoppingListStats() {
             setSellectedShoppingList(undefined)
             setWasListSelected(false)  
             router.push(`/groceries/index/${userId}`)
-          })
           }}>Update</button>
      
 

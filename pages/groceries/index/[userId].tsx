@@ -34,7 +34,12 @@ export default function Home() {
   const {userId} = useContext(groceryContext)
   const {setShoppingLists} = useContext(groceryContext)
   const {setAllShoppingLists} = useContext(groceryContext)
+  const {AllshoppingLists} = useContext(groceryContext)
 
+  useEffect(()=>{
+    setShoppingLists([])
+    setShoppingLists(AllshoppingLists)
+  })
 
   return (
     <div className={styles.groceriesMain}>
